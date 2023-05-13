@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@import "../scss/_cdn";
+@import "../scss/varFontSize";
+@import "../scss/mixins";
+@import "../scss/header";
+@import "../scss/features.scss";
+@import "../scss/projects.scss";
+@import "../scss/team.scss";
+@import "../scss/testimonials.scss";
+@import "../scss/download.scss";
+@import "../scss/FooterInfo.scss";
+@import "../scss/footer.scss";
+
+html {
+    font-family: 'Raleway', sans-serif;
+
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 10px;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 12px;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+    position: relative;
+    z-index: 12;
+
+    @media (max-width: 1200px) {
+        max-width: 970px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        max-width: 970px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 100%;
+    }
+    
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+
+    @media (max-width: 566px) {
+        width: 100%;
+    }
+
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+}
+
+.fa-brands {
+    @include icon;
+}
